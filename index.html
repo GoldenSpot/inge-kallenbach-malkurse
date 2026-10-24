@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Malkurse Inge Kallenbach – drei Entwürfe</title>
+<meta name="robots" content="noindex">
+<style>
+:root { --bg: #f2f0ec; --ink: #161512; --soft: #e4e1db; color-scheme: light; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg); color: var(--ink); font: 400 18px/1.5 system-ui, sans-serif; padding: clamp(24px, 5vw, 64px) clamp(16px, 4vw, 48px); }
+h1 { font-size: clamp(2rem, 1.2rem + 3vw, 3.5rem); font-weight: 600; letter-spacing: -0.03em; line-height: 1.05; }
+.lead { margin-top: 16px; max-width: 60ch; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 48px; }
+a.card { display: flex; flex-direction: column; text-decoration: none; color: inherit; background: var(--soft); transition: transform .2s cubic-bezier(.16,1,.3,1); }
+a.card:hover { transform: translateY(-4px); }
+a.card:active { transform: scale(.99); }
+a.card:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+.sw { height: 220px; display: grid; place-items: center; font-size: 44px; font-weight: 700; letter-spacing: -0.03em; }
+.card div.t { padding: 20px 22px 24px; }
+.card h2 { font-size: 22px; letter-spacing: -0.01em; }
+.card p { margin-top: 6px; }
+@media (max-width: 860px) { .grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<h1>Malkurse Inge Kallenbach: drei Entwürfe</h1>
+<p class="lead">Gleiche Inhalte, drei Gestaltungen. Gelb markierte oder hervorgehobene Stellen sind Platzhalter, die noch mit echten Angaben gefüllt werden.</p>
+<div class="grid">
+  <a class="card" href="design-1.html"><span class="sw" style="background:#26251e;color:#eeece6">Kurskarte</span><div class="t"><h2>1 · Die Kurskarte</h2><p>Steingrau und Ultramarin, ruhige Serifenschrift. Die Seite ist eine gedruckte Kurskarte mit vier Feldern zum Abstempeln.</p></div></a>
+  <a class="card" href="design-2.html"><span class="sw" style="background:#b11226;color:#fff">Farbkasten</span><div class="t"><h2>2 · Der Farbkasten</h2><p>Schwarz und Krapplack-Rot, runde Schrift. Sechs Näpfchen, sechs Plätze: Gruppengröße wählen und sehen, wie viel Zeit Inge für dich hat.</p></div></a>
+  <a class="card" href="design-3.html"><span class="sw" style="background:#e1ac10;color:#0b0b0b;font-size:28px">INGE ▭ KALLENBACH</span><div class="t"><h2>3 · Der große Satz</h2><p>Senfgelb und Schwarz, kräftige Plakatschrift. Ein Bild sitzt mitten im Namen und wechselt bei jedem Besuch.</p></div></a>
+</div>
+</body>
+</html>

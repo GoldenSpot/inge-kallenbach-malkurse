@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Malkurse Inge Kallenbach – Kaiserslautern</title>
+<meta name="description" content="Malkurse in Kaiserslautern bei Inge Kallenbach: 3 bis 6 Personen, vier Treffen à zwei Stunden, 60 € pro Person.">
+<meta name="theme-color" content="#26251e">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+<link href="https://api.fontshare.com/v2/css?f[]=erode@400,500,600&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root {
+  --bg: #dfdedb;
+  --surface: #d3d2ce;
+  --paper: #eeece6;
+  --ink: #26251e;
+  --muted: #55534b;
+  --accent: #2456d6;
+  --accent-deep: #1a44b3;
+  --accent-ink: #ffffff;
+  --step-small: clamp(0.8125rem, 0.79rem + 0.1vw, 0.875rem);
+  --step-body: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
+  --step-lead: clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem);
+  --step-head: clamp(2.25rem, 1.3rem + 3.2vw, 4.25rem);
+  --step-big: clamp(2.75rem, 1.4rem + 5vw, 6rem);
+  --m: clamp(16px, 3vw, 40px);
+  --ease: cubic-bezier(.16, 1, .3, 1);
+  color-scheme: light;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+.skip { position: absolute; left: 16px; top: -100px; z-index: 50; background: var(--ink); color: var(--bg); padding: 12px 18px; text-decoration: none; }
+.skip:focus { top: 16px; }
+a, button, summary { touch-action: manipulation; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+body { background: var(--bg); color: var(--ink); font-family: Erode, Georgia, serif; font-size: var(--step-body); line-height: 1.5; -webkit-font-smoothing: antialiased; }
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+h1, h2, h3 { font-weight: 500; letter-spacing: -0.025em; line-height: 0.98; text-wrap: balance; }
+p { text-wrap: pretty; }
+.wrap { padding-inline: var(--m); max-width: 1520px; margin-inline: auto; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 28px; background: var(--accent); color: var(--accent-ink); font: 600 var(--step-body)/1 Erode, serif; text-decoration: none; border: 0; cursor: pointer; transition: background .2s, transform .15s var(--ease); touch-action: manipulation; }
+.btn:hover { background: var(--accent-deep); }
+.btn:active { transform: scale(.97); }
+.ph { background: #fff3a8; padding: 0 .15em; }
+
+/* Reveal */
+.js [data-reveal] { opacity: 0; transform: translateY(24px); transition: opacity .8s var(--ease) var(--d, 0ms), transform .8s var(--ease) var(--d, 0ms); }
+.js [data-reveal].is-in { opacity: 1; transform: none; }
+
+/* ---------- Hero: Kurskarte über dem dunklen Raum ---------- */
+.hero { position: relative; min-height: 100svh; display: grid; align-items: center; justify-items: start; padding: 32px calc(var(--m) * 2); overflow: clip; background: #1b1a16; }
+.hero-photo { position: absolute; inset: 0 0 0 46%; }
+.hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; filter: brightness(.62) saturate(.9); transform: scale(1.06); animation: drift 24s var(--ease) both; }
+@keyframes drift { from { transform: scale(1.14); } to { transform: scale(1.04); } }
+.card { position: relative; z-index: 1; width: min(860px, 100%); min-height: min(640px, 82svh); background: var(--paper); padding: clamp(24px, 3vw, 40px); display: grid; grid-template-rows: auto 1fr auto; gap: 32px; transform-origin: 0 100%; }
+.card-top { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+.card-top a { text-decoration: none; font-size: var(--step-small); }
+.card-top a:hover { text-decoration: underline; }
+.card h1 { font-size: var(--step-big); line-height: .92; }
+.card-body { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-content: end; }
+.facts { list-style: none; font-size: var(--step-lead); line-height: 1.25; }
+.facts li + li { margin-top: 6px; }
+.card-body p { font-size: var(--step-lead); line-height: 1.3; max-width: 30ch; }
+.stamps { grid-column: 1 / -1; }
+.stamps-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 10px; }
+.stamp { min-height: 76px; background: var(--surface); border: 0; cursor: pointer; font: 500 var(--step-small)/1.2 Erode, serif; color: var(--ink); display: grid; place-items: center; text-align: center; padding: 8px; transition: background .25s, transform .2s var(--ease); position: relative; }
+.stamp:hover { background: #c8c7c2; }
+.stamp:active { transform: scale(.96); }
+.stamp[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); }
+.stamp[aria-pressed="true"]::after { content: ""; position: absolute; inset: 14%; border-radius: 50%; background: rgba(255,255,255,.14); animation: ink .5s var(--ease); }
+@keyframes ink { from { transform: scale(.4); opacity: 0; } }
+.stamp-note { margin-top: 12px; min-height: 3em; font-size: var(--step-body); max-width: 60ch; }
+.card-foot { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+.card-foot small { font-size: var(--step-small); color: var(--muted); }
+.card-foot a.link { font-size: var(--step-body); }
+
+/* ---------- Intro: Titel, Notiz, Faktenzeile ---------- */
+.intro { padding-block: 160px 140px; }
+.intro-top { display: grid; grid-template-columns: repeat(12, 1fr); gap: 24px; align-items: end; }
+.intro-top h2 { grid-column: 1 / 7; font-size: var(--step-big); font-weight: 400; }
+.intro-top p { grid-column: 9 / 13; max-width: 34ch; }
+.fact-row { display: flex; justify-content: space-between; gap: 32px; margin-top: 120px; flex-wrap: wrap; }
+.fact-row div { min-width: 0; }
+.fact-row strong { display: block; font-weight: 400; font-size: var(--step-head); line-height: 1; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.fact-row span { display: block; margin-top: 10px; color: var(--muted); font-size: var(--step-body); max-width: 22ch; }
+.intro-photo { margin-top: 80px; display: grid; grid-template-columns: repeat(12, 1fr); gap: 24px; }
+.intro-photo figure { grid-column: 6 / 13; background: var(--accent); }
+.intro-photo img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; filter: grayscale(1) contrast(1.15); mix-blend-mode: screen; }
+.intro-photo figcaption { grid-column: 1 / 6; align-self: end; font-size: var(--step-body); max-width: 30ch; }
+
+/* ---------- Ablauf: Reihe der vier Treffen ---------- */
+.steps { padding: 120px 0 160px; background: var(--surface); }
+.steps-head { display: flex; justify-content: space-between; align-items: end; gap: 24px; }
+.steps-head h2 { font-size: var(--step-head); }
+.steps-nav { display: flex; gap: 8px; }
+.steps-nav button { width: 52px; height: 52px; border: 0; background: var(--ink); color: var(--paper); font: 500 22px/1 Erode, serif; cursor: pointer; transition: transform .15s var(--ease), background .2s; }
+.steps-nav button:hover { background: #000; }
+.steps-nav button:active { transform: scale(.94); }
+.progress { height: 6px; background: #bdbcb7; margin-top: 28px; }
+.progress i { display: block; height: 100%; width: 25%; background: var(--ink); transform-origin: 0 0; transition: width .2s; }
+.row { display: flex; gap: 32px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 40px var(--m) 8px; margin-inline: calc(var(--m) * -1); scrollbar-width: none; scroll-padding-inline: var(--m); }
+.row::-webkit-scrollbar { display: none; }
+.moment { flex: 0 0 min(340px, 76vw); scroll-snap-align: start; display: flex; flex-direction: column; }
+.moment h3 { font-size: var(--step-lead); font-weight: 600; letter-spacing: -0.01em; line-height: 1.15; }
+.moment p { margin-top: 10px; color: var(--ink); }
+.moment img { margin-top: auto; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
+.moment .gap { flex: 0 0 var(--gap, 96px); }
+
+/* ---------- Preis: das Ticket ---------- */
+.price { background: var(--ink); color: var(--paper); padding: 160px 0; }
+.price h2 { font-size: var(--step-head); text-align: center; margin-bottom: 56px; }
+.ticket { --notch: 28px; position: relative; width: min(1040px, 100%); margin-inline: auto; display: grid; grid-template-columns: 7fr 3fr; background: var(--paper); color: var(--ink); min-height: 420px; }
+.ticket::before, .ticket::after { content: ""; position: absolute; left: 70%; width: var(--notch); height: var(--notch); border-radius: 50%; background: var(--ink); transform: translateX(-50%); }
+.ticket::before { top: calc(var(--notch) / -2); }
+.ticket::after { bottom: calc(var(--notch) / -2); }
+.t-main { padding: 40px; display: grid; grid-template-rows: auto 1fr auto; gap: 24px; }
+.t-main h3 { font-size: var(--step-head); }
+.t-main dl { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 32px; font-size: var(--step-body); }
+.t-main dt { font-weight: 600; }
+.t-main dd { color: var(--ink); }
+.t-stub { position: relative; padding: 40px 28px; display: flex; flex-direction: column; justify-content: center; align-items: stretch; gap: 20px; text-align: center; background: var(--surface); }
+.t-stub::before { content: ""; position: absolute; left: -3px; top: 24px; bottom: 24px; border-left: 6px dotted var(--ink); }
+.t-stub .num { font-size: clamp(3.5rem, 2rem + 4vw, 6rem); line-height: 1; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
+.t-stub small { font-size: var(--step-body); }
+.t-stub .btn { width: 100%; }
+
+/* ---------- Über Inge: Brief ---------- */
+.about { padding: 180px var(--m); }
+.letter { width: min(680px, 100%); margin-inline: auto; background: var(--paper); padding: clamp(28px, 5vw, 60px); padding-bottom: 72px; clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); position: relative; }
+.letter-head { display: flex; align-items: center; gap: 16px; margin-bottom: 28px; }
+.letter-head .portrait { width: 64px; height: 64px; border-radius: 50%; overflow: hidden; background: var(--accent); flex: none; }
+.letter-head .portrait img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 15%; filter: grayscale(1) contrast(1.2); mix-blend-mode: screen; }
+.letter h2 { font-size: var(--step-lead); font-weight: 600; letter-spacing: -0.01em; }
+.letter p + p { margin-top: 1.1em; }
+.letter .sign { margin-top: 32px; font-style: italic; font-size: var(--step-lead); }
+.letter .role { color: var(--muted); font-size: var(--step-small); }
+.scallop { width: min(680px, 100%); margin-inline: auto; height: 12px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='12'%3E%3Ccircle cx='12' cy='0' r='12' fill='%23eeece6'/%3E%3C/svg%3E") 0 0 / 24px 12px repeat-x; }
+.tear { width: min(680px, 100%); margin: 16px auto 0; background: var(--paper); padding: 22px clamp(24px, 5vw, 60px); display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; position: relative; }
+.tear::before { content: ""; position: absolute; left: 0; right: 0; top: -11px; border-top: 6px dotted var(--paper); }
+
+/* ---------- Galerie: Bilder mit Etikett ---------- */
+.gallery { padding: 140px 0 160px; background: var(--surface); }
+.gallery h2 { font-size: var(--step-head); margin-bottom: 48px; }
+.tiles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px 12px; }
+.tile { display: flex; flex-direction: column; }
+.tile img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; transition: transform .6s var(--ease); }
+.tile .imgbox { overflow: hidden; }
+.tile:hover img { transform: scale(1.04); }
+.tile .tag { min-height: 92px; padding: 12px 14px; font-size: var(--step-small); line-height: 1.35; display: grid; gap: 4px; }
+.tile .tag b { font-weight: 600; font-size: var(--step-body); }
+.tile:nth-child(4n+1) .tag { background: var(--ink); color: var(--paper); }
+.tile:nth-child(4n+2) .tag { background: var(--accent); color: var(--accent-ink); }
+.tile:nth-child(4n+3) .tag { background: var(--paper); color: var(--ink); }
+.tile:nth-child(4n+4) .tag { background: #b9b8b2; color: var(--ink); }
+
+/* ---------- FAQ: Karteikarten ---------- */
+.faq { padding: 160px 0; }
+.faq-inner { width: min(980px, 100%); margin-inline: auto; }
+.faq h2 { font-size: var(--step-head); margin-bottom: 64px; }
+.cards { position: relative; }
+.icard { position: relative; margin-top: -8px; }
+.icard .tab { display: block; width: 220px; max-width: 46%; height: 44px; margin-left: calc(var(--i) * min(150px, 10%)); background: var(--c); clip-path: polygon(0 100%, 8% 0, 92% 0, 100% 100%); padding: 12px 22px 0; font-size: var(--step-small); font-weight: 600; }
+.icard button { display: block; width: 100%; text-align: left; border: 0; background: var(--c); color: var(--ink); font: 500 var(--step-lead)/1.25 Erode, serif; padding: 20px 28px 26px; cursor: pointer; }
+.icard button:hover { filter: brightness(.97); }
+.icard .ans { background: var(--c); padding: 0 28px; display: grid; grid-template-rows: 0fr; transition: grid-template-rows .45s var(--ease); }
+.icard .ans > div { overflow: hidden; }
+.icard .ans p { max-width: 54ch; padding-bottom: 28px; }
+.icard.open .ans { grid-template-rows: 1fr; }
+.icard:nth-child(3n+1) { --c: var(--paper); }
+.icard:nth-child(3n+2) { --c: #cfcec9; }
+.icard:nth-child(3n+3) { --c: #bdd0f7; }
+
+/* ---------- Kontakt: Coupon ---------- */
+.contact { padding: 140px 0 160px; background: var(--surface); }
+.coupon { --notch: 28px; position: relative; width: min(1180px, 100%); margin-inline: auto; display: grid; grid-template-columns: 46fr 54fr; background: var(--accent); color: var(--accent-ink); min-height: 480px; }
+.coupon::before, .coupon::after { content: ""; position: absolute; left: 46%; width: var(--notch); height: var(--notch); border-radius: 50%; background: var(--surface); transform: translateX(-50%); }
+.coupon::before { top: calc(var(--notch) / -2); }
+.coupon::after { bottom: calc(var(--notch) / -2); }
+.c-left { padding: 48px; display: flex; flex-direction: column; justify-content: space-between; gap: 32px; }
+.c-left h2 { font-size: var(--step-head); }
+.c-right { position: relative; padding: 48px; display: grid; gap: 10px; align-content: center; }
+.c-right::before { content: ""; position: absolute; left: -3px; top: 28px; bottom: 28px; border-left: 6px dotted var(--surface); }
+.c-right input, .c-right select, .c-right textarea { width: 100%; min-height: 54px; border: 0; background: #4b74e0; color: #fff; font: 400 var(--step-body)/1.3 Erode, serif; padding: 14px 16px; border-radius: 0; }
+.c-right textarea { min-height: 96px; resize: vertical; }
+.c-right ::placeholder { color: #dfe6fb; }
+.c-right button { min-height: 56px; border: 0; background: var(--ink); color: var(--paper); font: 600 var(--step-body)/1 Erode, serif; cursor: pointer; transition: transform .15s var(--ease), background .2s; }
+.c-right button:hover { background: #000; }
+.c-right button:active { transform: scale(.98); }
+
+/* ---------- Footer: Rückseite der Karte ---------- */
+.foot { background: var(--ink); color: var(--paper); padding: 120px var(--m) 48px; }
+.back { width: min(1180px, 100%); margin-inline: auto; position: relative; background: var(--paper); color: var(--ink); padding: 56px clamp(24px, 4vw, 56px) 32px; }
+.back::before { content: ""; position: absolute; left: 0; right: 0; top: -20px; height: 20px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='20'%3E%3Ccircle cx='24' cy='24' r='24' fill='%23eeece6'/%3E%3C/svg%3E") 0 0 / 48px 20px repeat-x; }
+.back-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+.back h2 { font-size: var(--step-head); }
+.back-msg p { margin-top: 20px; max-width: 36ch; }
+.addr { list-style: none; display: grid; gap: 12px; font-size: var(--step-lead); align-content: start; position: relative; padding-top: 140px; }
+.addr a { text-decoration: none; }
+.addr a:hover { text-decoration: underline; }
+.post-stamp { position: absolute; top: 0; right: 0; width: 96px; padding: 6px; background: var(--accent); }
+.post-stamp img { aspect-ratio: 3 / 4; object-fit: cover; width: 100%; }
+.credits { margin-top: 56px; font-size: var(--step-small); color: var(--ink); line-height: 1.55; }
+.imprint { margin-top: 24px; text-align: center; font-size: var(--step-small); color: var(--muted); }
+
+/* ---------- Phone ---------- */
+@media (max-width: 820px) {
+  .hero { padding: 16px; justify-items: center; }
+  .hero-photo { inset: 0; }
+  .card { min-height: 82svh; gap: 24px; }
+  .card-body { grid-template-columns: 1fr; gap: 16px; }
+  .card-top { flex-wrap: wrap; }
+  .intro { padding-block: 96px; }
+  .intro-top { grid-template-columns: 1fr; }
+  .intro-top h2, .intro-top p { grid-column: 1 / -1; }
+  .fact-row { display: grid; grid-template-columns: 1fr 1fr; gap: 32px 20px; margin-top: 64px; }
+  .intro-photo { grid-template-columns: 1fr; }
+  .intro-photo figure, .intro-photo figcaption { grid-column: 1 / -1; }
+  .steps { padding: 96px 0 112px; }
+  .steps-nav { display: none; }
+  .moment .gap { flex-basis: calc(var(--gap, 96px) / 2.5); }
+  .price { padding: 112px 0; }
+  .ticket { grid-template-columns: 1fr; }
+  .ticket::before, .ticket::after { left: auto; top: auto; transform: none; bottom: auto; }
+  .ticket::before { left: calc(var(--notch) / -2); top: calc(var(--split, 62%) - var(--notch) / 2); }
+  .ticket::after { right: calc(var(--notch) / -2); top: calc(var(--split, 62%) - var(--notch) / 2); }
+  .t-main { padding: 28px 24px; }
+  .t-main dl { grid-template-columns: 1fr; }
+  .t-stub::before { left: 24px; right: 24px; top: -3px; bottom: auto; border-left: 0; border-top: 6px dotted var(--ink); }
+  .about { padding: 112px 0; }
+  .tiles { grid-template-columns: 1fr 1fr; gap: 20px 8px; }
+  .faq { padding: 112px 0; }
+  .icard .tab { width: 150px; max-width: 60%; margin-left: calc(var(--i) * 40px); }
+  .icard button { padding: 16px 20px 22px; }
+  .icard .ans { padding: 0 20px; }
+  .contact { padding: 96px 0; }
+  .coupon { grid-template-columns: 1fr; }
+  .coupon::before, .coupon::after { display: none; }
+  .c-left, .c-right { padding: 28px 22px; }
+  .c-right::before { left: 22px; right: 22px; top: -3px; bottom: auto; border-left: 0; border-top: 6px dotted var(--surface); }
+  .foot { padding: 96px var(--m) 32px; }
+  .back-grid { grid-template-columns: 1fr; }
+  .addr { padding-top: 0; }
+  .post-stamp { position: static; width: 72px; margin-bottom: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .js [data-reveal] { opacity: 1; transform: none; }
+  html { scroll-behavior: auto; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#inhalt">Zum Inhalt springen</a>
+
+<header class="hero" id="top">
+  <div class="hero-photo"><img src="assets/blond-woman-before-an-easel-by-edward.jpg" width="1448" height="2048" alt="Gemälde von Edward Hopper: eine Frau steht im dunklen Atelier vor ihrer Staffelei und malt." fetchpriority="high"></div>
+  <article class="card" id="karte" aria-labelledby="titel">
+    <div class="card-top">
+      <a href="#ablauf">Ablauf</a>
+      <a href="#preis">Preis</a>
+      <a href="#fragen">Fragen</a>
+      <a href="#anmelden">Anmelden</a>
+    </div>
+    <div class="card-body">
+      <h1 id="titel" style="grid-column:1/-1">Malkurse mit Inge Kallenbach</h1>
+      <ul class="facts">
+        <li>Kaiserslautern, <span class="ph">[Atelier, Adresse folgt]</span></li>
+        <li>4 Treffen à 2 Stunden</li>
+        <li>3 bis 6 Personen, 60 €</li>
+      </ul>
+      <p>Malen lernen in einer kleinen Runde, in der Inge Zeit für jedes einzelne Bild hat.</p>
+      <div class="stamps">
+        <strong>Deine Kurskarte, tipp ein Feld an:</strong>
+        <div class="stamps-row" role="group" aria-label="Die vier Treffen">
+          <button class="stamp" type="button" aria-pressed="false" data-note="Erstes Treffen: Sehen und skizzieren. Du lernst, Formen, Licht und Schatten zu erkennen, bevor der erste Pinselstrich fällt.">Erstes Treffen</button>
+          <button class="stamp" type="button" aria-pressed="false" data-note="Zweites Treffen: Farbe mischen. Aus drei Grundfarben und Weiß entsteht deine eigene Palette.">Zweites Treffen</button>
+          <button class="stamp" type="button" aria-pressed="false" data-note="Drittes Treffen: Ein Motiv aufbauen. Vom groben Untergrund zu den ersten Details.">Drittes Treffen</button>
+          <button class="stamp" type="button" aria-pressed="false" data-note="Viertes Treffen: Dein Bild wird fertig. Zum Schluss schauen wir alle Bilder gemeinsam an.">Viertes Treffen</button>
+        </div>
+        <p class="stamp-note" aria-live="polite">Vier Felder, vier Abende. Am Ende nimmst du ein fertiges Bild mit nach Hause.</p>
+      </div>
+    </div>
+    <div class="card-foot">
+      <small>Nächster Kurs: <span class="ph">[Datum folgt]</span></small>
+      <a class="btn" href="#anmelden">Platz anfragen</a>
+      <a class="link" href="#inge">Über Inge</a>
+    </div>
+  </article>
+</header>
+
+<main id="inhalt">
+  <section class="intro wrap" aria-labelledby="intro-h">
+    <div class="intro-top">
+      <h2 id="intro-h" data-reveal>Kleine Runde, ganzes Bild</h2>
+      <p data-reveal>Höchstens sechs Menschen sitzen am Tisch. So bleibt Zeit, dir über die Schulter zu schauen, Fragen zu beantworten und gemeinsam zu lachen, wenn eine Farbe nicht will.</p>
+    </div>
+    <div class="fact-row">
+      <div data-reveal><strong>3–6</strong><span>Teilnehmende pro Kurs, nie mehr</span></div>
+      <div data-reveal><strong>4 × 2 Std.</strong><span>vier Treffen, je zwei Stunden</span></div>
+      <div data-reveal><strong>60 €</strong><span>pro Person für alle vier Treffen</span></div>
+      <div data-reveal><strong>0</strong><span>Vorkenntnisse nötig</span></div>
+    </div>
+    <div class="intro-photo">
+      <figcaption data-reveal>Die Pfalzgalerie in Kaiserslautern: Hier hängen die Großen. Bei Inge fängst du klein an, mit Pinsel, Wasser und Geduld.</figcaption>
+      <figure data-reveal><img src="assets/kaiserslautern-pfalzgalerie-2019-02-16-15-29.jpg" width="1920" height="1277" alt="Das Museum Pfalzgalerie in Kaiserslautern, rote Sandsteinfassade unter blauem Himmel." loading="lazy"></figure>
+    </div>
+  </section>
+
+  <section class="steps" id="ablauf" aria-labelledby="ablauf-h">
+    <div class="wrap">
+      <div class="steps-head">
+        <h2 id="ablauf-h">So laufen die vier Treffen</h2>
+        <div class="steps-nav"><button type="button" data-dir="-1" aria-label="Zurück">←</button><button type="button" data-dir="1" aria-label="Weiter">→</button></div>
+      </div>
+      <div class="progress" aria-hidden="true"><i></i></div>
+      <div class="row" tabindex="0" aria-label="Die vier Treffen, seitlich scrollen">
+        <article class="moment" style="--gap:72px">
+          <h3>Zuerst schauen wir</h3>
+          <p>Du lernst, ein Motiv in einfache Formen zu zerlegen und Licht und Schatten zu sehen. Mit Bleistift und Kohle, ganz ohne Druck.</p>
+          <div class="gap"></div>
+          <img src="assets/study-for-sophie-unternahrer-at-her-easel.jpg" width="1920" height="2863" alt="Kohlezeichnung von François Bonvin: eine Frau sitzt an der Staffelei und malt." loading="lazy">
+        </article>
+        <article class="moment" style="--gap:132px">
+          <h3>Dann mischen wir Farbe</h3>
+          <p>Aus drei Grundfarben und Weiß entsteht deine Palette. Du merkst, wie viel Wasser, wie viel Pigment, wie viel Mut es braucht.</p>
+          <div class="gap"></div>
+          <img src="assets/sir-lawrence-alma-tadema-s-paint-box.webp" width="1024" height="723" alt="Ein alter Aquarellfarbkasten aus Metall mit dunklen Farbnäpfchen." loading="lazy" style="aspect-ratio:4/5">
+        </article>
+        <article class="moment" style="--gap:96px">
+          <h3>Danach baust du dein Motiv</h3>
+          <p>Vom groben Untergrund zu den ersten Details. Inge zeigt dir, wann du weitermalst und wann du aufhörst.</p>
+          <div class="gap"></div>
+          <img src="assets/sketchbook-mountainous-landscape-with-bridge.jpg" width="1920" height="1109" alt="Skizzenbuchseite von Samuel Prout: eine Berglandschaft mit Brücke in grauen Lasuren." loading="lazy">
+        </article>
+        <article class="moment" style="--gap:140px">
+          <h3>Am Ende ist dein Bild fertig</h3>
+          <p>Am vierten Abend malst du zu Ende. Zum Schluss stellen wir alle Bilder auf und schauen sie gemeinsam an.</p>
+          <div class="gap"></div>
+          <img src="assets/two-landscape-from-switzerland-1870-sketchbook.jpg" width="1920" height="1565" alt="Zwei Aquarellskizzen von John Singer Sargent: ein Baum und ein Dorf mit Kirchturm." loading="lazy">
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="price" id="preis" aria-labelledby="preis-h">
+    <div class="wrap">
+      <h2 id="preis-h" data-reveal>Was der Kurs kostet</h2>
+      <article class="ticket" data-reveal>
+        <div class="t-main">
+          <h3>Malkurs, vier Treffen</h3>
+          <div></div>
+          <dl>
+            <div><dt>Wann</dt><dd><span class="ph">[Wochentag, 18 bis 20 Uhr]</span></dd></div>
+            <div><dt>Wo</dt><dd>Kaiserslautern, <span class="ph">[Adresse folgt]</span></dd></div>
+            <div><dt>Gruppe</dt><dd>3 bis 6 Personen</dd></div>
+            <div><dt>Material</dt><dd><span class="ph">[inklusive oder eigenes, bitte klären]</span></dd></div>
+          </dl>
+        </div>
+        <div class="t-stub">
+          <div class="num">60 €</div>
+          <small>pro Person für alle vier Treffen</small>
+          <a class="btn" href="#anmelden">Platz anfragen</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="about" id="inge" aria-labelledby="inge-h">
+    <article class="letter" data-reveal>
+      <div class="letter-head">
+        <div class="portrait"><img src="assets/study-for-sophie-unternahrer-at-her-easel.jpg" width="1920" height="2863" alt="" loading="lazy"></div>
+        <h2 id="inge-h">Ein paar Zeilen von Inge</h2>
+      </div>
+      <p>Liebe Malfreundin, lieber Malfreund,</p>
+      <p>ich male, seit ich denken kann. Am liebsten mit Menschen, die sagen: Ich kann das eigentlich gar nicht. Genau für sie habe ich diese Kurse gemacht.</p>
+      <p>In meiner kleinen Runde gibt es kein Richtig und kein Falsch. Es gibt Farbe, Wasser, Papier und zwei Stunden, in denen der Alltag draußen bleibt.</p>
+      <p>Ich freue mich, wenn du dich an meinen Tisch setzt.</p>
+      <p class="sign">Inge Kallenbach</p>
+      <p class="role">Malkurse in Kaiserslautern · <span class="ph">[Beispieltext, Inge schreibt ihn selbst]</span></p>
+    </article>
+    <div class="scallop" aria-hidden="true"></div>
+    <div class="tear">
+      <span>Schreib Inge direkt:</span>
+      <a href="mailto:kontakt@example.de?subject=Malkurs%20Anfrage">kontakt@example.de</a>
+    </div>
+  </section>
+
+  <section class="gallery" aria-labelledby="galerie-h">
+    <div class="wrap">
+      <h2 id="galerie-h" data-reveal>Am Maltisch</h2>
+      <div class="tiles">
+        <figure class="tile" data-reveal><div class="imgbox"><img src="assets/painting-brushes.jpg" width="1920" height="1081" alt="Sieben Pinsel mit synthetischen Borsten nebeneinander." loading="lazy"></div><figcaption class="tag"><b>Pinsel</b><span>Rund, flach, Katzenzunge</span></figcaption></figure>
+        <figure class="tile" data-reveal><div class="imgbox"><img src="assets/artist-paint-tubes-studio-trolley.jpg" width="1920" height="1189" alt="Viele bunte Farbtuben in einem Atelierwagen." loading="lazy"></div><figcaption class="tag"><b>Acrylfarbe</b><span>Deckend, trocknet schnell</span></figcaption></figure>
+        <figure class="tile" data-reveal><div class="imgbox"><img src="assets/sir-lawrence-alma-tadema-s-paint-box.webp" width="1024" height="723" alt="Alter Aquarellkasten mit geöffnetem Deckel." loading="lazy"></div><figcaption class="tag"><b>Aquarell</b><span>Leicht, durchscheinend</span></figcaption></figure>
+        <figure class="tile" data-reveal><div class="imgbox"><img src="assets/painting-knives.jpg" width="1920" height="2571" alt="Vier Malmesser mit Holzgriffen." loading="lazy"></div><figcaption class="tag"><b>Malmesser</b><span>Für pastose Farbe</span></figcaption></figure>
+        <figure class="tile" data-reveal><div class="imgbox"><img src="assets/2012-pfalzerwald-298-huhnerstein-panorama-lug.jpg" width="1920" height="1440" alt="Blick über die bewaldeten Hügel des Pfälzerwalds auf ein Dorf im Tal." loading="lazy"></div><figcaption class="tag"><b>Motiv vor der Tür</b><span>Pfälzerwald</span></figcaption></figure>
+        <figure class="tile" data-reveal><div class="imgbox"><img src="assets/kaiserslautern-stiftskirche-zum-chor-gje10.jpg" width="1920" height="1285" alt="Innenraum der Stiftskirche Kaiserslautern mit roten Sandsteinsäulen." loading="lazy"></div><figcaption class="tag"><b>Licht studieren</b><span>Stiftskirche</span></figcaption></figure>
+        <figure class="tile" data-reveal><div class="imgbox"><img src="assets/two-landscape-from-switzerland-1870-sketchbook.jpg" width="1920" height="1565" alt="Aquarellskizzen von John Singer Sargent." loading="lazy"></div><figcaption class="tag"><b>Skizzieren</b><span>Wie Sargent, 1870</span></figcaption></figure>
+        <figure class="tile" data-reveal><div class="imgbox"><img src="assets/blond-woman-before-an-easel-by-edward.jpg" width="1448" height="2048" alt="Gemälde von Edward Hopper: Frau an der Staffelei." loading="lazy"></div><figcaption class="tag"><b>Dranbleiben</b><span>Vier Abende lang</span></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="fragen" aria-labelledby="fragen-h">
+    <div class="faq-inner wrap">
+      <h2 id="fragen-h" data-reveal>Was du vorher wissen willst</h2>
+      <div class="cards">
+        <div class="icard open" style="--i:0"><span class="tab">Anfang</span><button type="button" aria-expanded="true" aria-controls="a1">Brauche ich Vorkenntnisse?</button><div class="ans" id="a1"><div><p>Nein. Die Kurse sind für Anfängerinnen und Anfänger gemacht. Wer schon malt, bekommt von Inge eigene Aufgaben.</p></div></div></div>
+        <div class="icard" style="--i:1"><span class="tab">Material</span><button type="button" aria-expanded="false" aria-controls="a2">Was muss ich mitbringen?</button><div class="ans" id="a2"><div><p><span class="ph">[Bitte klären: Ist das Grundmaterial im Preis enthalten?]</span> Bequeme Kleidung, die Farbe abkann, ist immer eine gute Idee.</p></div></div></div>
+        <div class="icard" style="--i:2"><span class="tab">Technik</span><button type="button" aria-expanded="false" aria-controls="a3">Womit wird gemalt?</button><div class="ans" id="a3"><div><p><span class="ph">[Bitte klären: Aquarell, Acryl oder beides?]</span> Inge stimmt die Technik auf die Gruppe ab.</p></div></div></div>
+        <div class="icard" style="--i:3"><span class="tab">Gruppe</span><button type="button" aria-expanded="false" aria-controls="a4">Was, wenn sich nur zwei melden?</button><div class="ans" id="a4"><div><p>Ein Kurs startet ab drei Personen. Kommt die Gruppe nicht zusammen, sagt Inge dir rechtzeitig Bescheid und du zahlst nichts.</p></div></div></div>
+        <div class="icard" style="--i:4"><span class="tab">Termine</span><button type="button" aria-expanded="false" aria-controls="a5">Ich verpasse ein Treffen. Und jetzt?</button><div class="ans" id="a5"><div><p>Sag Inge kurz Bescheid. Was du verpasst hast, holst du beim nächsten Treffen nach.</p></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="anmelden" aria-labelledby="anmelden-h">
+    <div class="wrap">
+      <form class="coupon" id="form" action="mailto:kontakt@example.de" method="get" data-reveal>
+        <div class="c-left">
+          <h2 id="anmelden-h">Platz im nächsten Kurs anfragen</h2>
+          <p>Inge meldet sich innerhalb weniger Tage bei dir. Die Anfrage ist unverbindlich.</p>
+        </div>
+        <div class="c-right">
+          <label class="sr" for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" placeholder="Dein Name …" required>
+          <label class="sr" for="f-mail">E-Mail</label><input id="f-mail" name="email" type="email" autocomplete="email" spellcheck="false" placeholder="Deine E-Mail …" required>
+          <label class="sr" for="f-n">Wie viele Plätze?</label>
+          <select id="f-n" name="plaetze"><option>1 Platz</option><option>2 Plätze</option><option>3 Plätze</option></select>
+          <label class="sr" for="f-msg">Nachricht</label><textarea id="f-msg" name="nachricht" placeholder="Magst du noch etwas sagen? …"></textarea>
+          <button type="submit">Anfrage senden</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="back">
+    <div class="back-grid">
+      <div class="back-msg">
+        <h2>Bis bald am Maltisch</h2>
+        <p>Inge Kallenbach, Malkurse in kleinen Gruppen in Kaiserslautern. Vier Treffen, sechs Plätze, ein Bild, das bleibt.</p>
+      </div>
+      <ul class="addr">
+        <li class="post-stamp" aria-hidden="true"><img src="assets/2012-pfalzerwald-298-huhnerstein-panorama-lug.jpg" width="1920" height="1440" alt="" loading="lazy"></li>
+        <li><a href="mailto:kontakt@example.de">kontakt@example.de</a></li>
+        <li><a href="tel:+490000000000"><span class="ph">[Telefon folgt]</span></a></li>
+        <li><span class="ph">[Straße und Hausnummer]</span></li>
+        <li>67655 Kaiserslautern</li>
+      </ul>
+    </div>
+    <p class="credits">Bilder: „Study for Sophie Unternährer at her easel“ von François Bonvin, gemeinfrei; „Blond Woman Before an Easel“ von Edward Hopper, gemeinfrei; „Sir Lawrence Alma-Tadema's Paint Box“, CC0, via rawpixel; <a href="https://commons.wikimedia.org/wiki/File:Artist_paint_tubes_studio_trolley.jpg">„Artist paint tubes studio trolley“</a> von Vadim Cole, CC BY-SA 4.0; <a href="https://commons.wikimedia.org/w/index.php?curid=43103287">„Painting brushes“</a> von Swathysuren, CC BY-SA 4.0; „Pfälzerwald Hühnerstein Panorama“ von Steffen 962, CC0; <a href="https://commons.wikimedia.org/w/index.php?curid=76653030">„Kaiserslautern – Pfalzgalerie“</a> von Radosław Drożdżewski, CC BY-SA 4.0; <a href="https://commons.wikimedia.org/w/index.php?curid=124700006">„Kaiserslautern Stiftskirche zum Chor“</a> von Gerd Eichmann, CC BY-SA 4.0; Skizzenbuch von John Singer Sargent, CC0; Skizzenbuch von Samuel Prout, CC0; <a href="https://commons.wikimedia.org/wiki/File:Painting_knives.jpg">„Painting knives“</a> von JohanahoJ, CC BY-SA 4.0. Alle via Wikimedia Commons, sofern nicht anders angegeben.</p>
+    <p class="imprint">© 2026 Inge Kallenbach · <a href="#">Impressum</a> · <a href="#">Datenschutz</a></p>
+  </div>
+</footer>
+
+<script src="shared/motion.js"></script>
+<script>
+// Kurskarte: Felder stempeln
+(() => {
+  const note = document.querySelector('.stamp-note');
+  document.querySelectorAll('.stamp').forEach((b) => b.addEventListener('click', () => {
+    const on = b.getAttribute('aria-pressed') !== 'true';
+    b.setAttribute('aria-pressed', on);
+    note.textContent = on ? b.dataset.note : 'Vier Felder, vier Abende. Am Ende nimmst du ein fertiges Bild mit nach Hause.';
+  }));
+})();
+// Karte schrumpft beim Scrollen leicht
+(() => {
+  const card = document.getElementById('karte');
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  let raf = 0;
+  addEventListener('scroll', () => {
+    cancelAnimationFrame(raf);
+    raf = requestAnimationFrame(() => {
+      const p = Math.min(scrollY / innerHeight, 1);
+      card.style.transform = `translateY(${p * 12}vh) scale(${1 - p * 0.18})`;
+    });
+  }, { passive: true });
+})();
+// Reihe der Treffen: Fortschritt und Pfeile
+(() => {
+  const row = document.querySelector('.row'), bar = document.querySelector('.progress i');
+  const upd = () => { const max = row.scrollWidth - row.clientWidth; bar.style.width = `${max > 0 ? 25 + 75 * row.scrollLeft / max : 100}%`; };
+  row.addEventListener('scroll', upd, { passive: true }); upd();
+  document.querySelectorAll('.steps-nav button').forEach((b) => b.addEventListener('click', () => row.scrollBy({ left: b.dataset.dir * 372, behavior: 'smooth' })));
+})();
+// Karteikarten: eine offen
+(() => {
+  const cards = [...document.querySelectorAll('.icard')];
+  cards.forEach((c) => c.querySelector('button').addEventListener('click', () => {
+    cards.forEach((o) => { const open = o === c; o.classList.toggle('open', open); o.querySelector('button').setAttribute('aria-expanded', open); });
+  }));
+})();
+// Formular als E-Mail
+document.getElementById('form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  const f = e.target, body = `Name: ${f.name.value}\nE-Mail: ${f.email.value}\nPlätze: ${f.plaetze.value}\n\n${f.nachricht.value}`;
+  location.href = `mailto:kontakt@example.de?subject=${encodeURIComponent('Anfrage Malkurs')}&body=${encodeURIComponent(body)}`;
+});
+</script>
+</body>
+</html>
